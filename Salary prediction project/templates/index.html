@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Salary Predictor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>Predict Your Salary</h2>
+        <form action="/predict" method="post">
+            <input type="number" name="experience" step="0.1" placeholder="Years of Experience" required>
+            <input type="submit" value="Predict Salary">
+        </form>
+        <br>
+        <a href="/login">Login</a> | <a href="/register">Register</a>
+    </div>
+</body>
+</html>
